@@ -1,5 +1,10 @@
 {% extends "base.html" %}
 
 {% block body %}
-<div class="colorful-text">hello world, {{ name }}</div>
+<div class="colorful-text">hello world</div>
+<div>
+{% for resume in resume_list %}
+  <div>{{ resume.name }}</div>
+{% endfor %}
+</div>
 {% endblock %}
