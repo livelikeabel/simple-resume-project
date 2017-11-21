@@ -1,10 +1,22 @@
 {% extends "base.html" %}
 
 {% block body %}
-<div class="colorful-text">hello world</div>
-<div class="colorful-text2">
-{% for resume in resume_list %}
-  <div>{{ resume.name }}</div>
-{% endfor %}
+<div class="container">
+  <div class="col-xs-6">
+    <div class="colorful-text">
+      <div>hello world</div>
+      <div>I'm macbook pro</div>
+      <div>my name is 1000001 100101 1100001</div>
+    </div>
+  </div>
+  <div class="col-xs-6">
+    <div class="colorful-text2">
+      {% for resume in resume_list %}
+        <div>
+          <span class="label label-default">{{ resume.name }}</span>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
 </div>
 {% endblock %}
